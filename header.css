@@ -4,13 +4,18 @@
     padding: 0;
 }
 
+.Fondo{
+    position: relative;
+}
+
 body {
     margin: 0;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(Imagenes/entrada.jpg);
-    background-size:140%;
+    background-image: url(Imagenes/entrada4.png);
+    background-size:100%;
     background-repeat: no-repeat;
     background-position: center;
     
@@ -98,6 +103,7 @@ nav {
     color: rgb(245, 24, 24);
     font-size: large;
     font-weight: 600;
+    
 }
 
 section {
@@ -106,7 +112,7 @@ section {
     display: flex;
     width: 950px;
     height: auto;
-    float: right;
+    float: left;
     box-sizing: content-box;
     position: relative;
 }
@@ -116,7 +122,8 @@ section {
     position:relative;
     width: 400px;
     height: auto;
-    color: rgb(16, 13, 167);
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em blue;
+    color: white;
     text-align: center;
     font-weight: 900;
     font-size: 200%;
@@ -130,21 +137,22 @@ section {
     padding: 10px;
     width: 800px;
     height: auto;
-    color: white;
+    color:white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em blue;
     text-align: justify;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-style:italic;
     font-size: 150%;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 aside {
-    margin: 3px 3px 3px 10px;
+    margin: 3px 15px 3px 3px;
     padding: 10px;
     width: 300px;
     height: auto;
     background-color: rgb(218, 219, 219);
-    float: left;
+    float: right;
     box-sizing: content-box;
     -webkit-box-sizing: 25%;
 }
@@ -156,7 +164,13 @@ footer {
     margin-top: auto;
 }
 
-.Redes {
+.Redes{
+    margin-top: 5px;
+    margin-left: 3%;
+    float: left;
+    width: 50%;
+}
+.Redes h2{
     margin: 10px;
     padding: 5px;
     display:inline-table;
@@ -176,7 +190,13 @@ footer {
     text-align:center;
 }
 
-.Sponsor {
+.Sponsor{
+    margin-top: 5px;
+    float: right;
+    width: 47%;
+}
+
+.Sponsor h2{
     margin: 10px;
     padding: 5px;
     display:inline-table;
@@ -201,12 +221,13 @@ footer {
     margin-left: 50px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em blue;
     text-align:center;
     color: white;
 }
 
 #Central iframe{
-    margin-left: 380px;
+    margin-left: 430px;
     padding: 10px;
     box-sizing: content-box;
 }
@@ -216,12 +237,13 @@ footer {
     margin-left: 50px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em blue;
     text-align:center;
     color: white;
 }
 
 #Anexo iframe{
-    margin-left: 380px;
+    margin-left: 430px;
     margin-bottom: 20px;
     padding: 10px;
     box-sizing: content-box;
