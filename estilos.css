@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-image: url(Imagenes/entrada4.png);
-    background-size:100%;
+    background-size:110%;
     background-repeat: no-repeat;
     background-position: center;
     
@@ -24,48 +24,50 @@ body {
 header {
     margin-top: 10px;
     padding: 5px;
-    width: 100%;
-    height: 120px;
+    min-width: 100vw;
+    height: 20vh;
     background-color: rgb(236, 236, 245);
     display: inline-flexbox;
 }
 
 #logo .logo1 {
     box-sizing: content-box;
-    margin: 5px 30px;
+    margin: 1vh 3vw;
     background-color: rgb(236, 236, 245);
-    padding: 10px;
-    width: 90px;
-    height: 90px;
+    padding: 1vh;
+    width: 7vw;
+    height: 15vh;
     position:relative;
 
 }
 
 #logo .logo2 {
     box-sizing: content-box;
-    margin: 5px 30px;
+    margin: 1vh 3vw;
     background-color: rgb(236, 236, 245);
-    padding: 10px;
-    width: 90px;
-    height: 90px;
+    padding: 1vh;
+    width: 7vw;
+    height: 15vh;
     position:relative;
     float: right;
 }
 
 #nombre {
     box-sizing: content-box;
-    margin: 5px 10px;
+    margin: 1vh;
     background-color: rgb(236, 236, 245);
-    padding: 10px;
-    width: 90%;
-    height: 70px;
+    padding: 1vh;
+    width: 90vw;
+    height: 15vh;
     position: absolute;
 }
 
 #nombre h1 {
     text-align:center;
     vertical-align: middle;
-    font-size: 300%;
+    font-size: 3em; 
+    width: 90vw;
+    height: 10vh;
     font-style: italic;
     color: rgb(233, 31, 31);
 }
@@ -73,44 +75,47 @@ header {
 #nombre h2 {
     text-align:center;
     vertical-align: middle;
-    font-size: 100%;
+    font-size: 1em;
+    width: 90vw;
+    height: 3vh;
     font-style: italic;
     color: rgb(7, 13, 100);
 }
 
 nav {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: space-around;
     list-style: none;
 }
 
 .Inicio {
     display: inline-block;
-    margin-top: 3px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 4px 20px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 1vh 2vw;
     background-color: rgb(16, 13, 167);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: .5em;
     border-style: solid;
-    border-width: 2px;
+    border-width: .15em;
     border-color: gold;
+    font-family:'Times New Roman', Times, serif;
     font-style: italic;
     color: rgb(245, 24, 24);
     font-size: large;
-    font-weight: 600;
+    font-weight:600;
     
 }
 
 section {
-    margin: 3px 10px 3px 3px;
-    padding: 10px;
+    margin: 1vw;
+    padding: 1vw;
     display: flex;
-    width: 950px;
+    width:60%;
     height: auto;
     float: left;
     box-sizing: content-box;
@@ -120,7 +125,7 @@ section {
 #Subtitulo {
     display: inline;
     position:relative;
-    width: 400px;
+    width: 40%;
     height: auto;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em blue;
     color: white;
@@ -133,9 +138,9 @@ section {
     display: inline;
     position: relative;
     z-index: auto;
-    margin: 3px 10px 3px 3px;
-    padding: 10px;
-    width: 800px;
+    margin: 1vw;
+    padding: 1vw;
+    width: 60%;
     height: auto;
     color:white;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em blue;
@@ -147,9 +152,9 @@ section {
 }
 
 aside {
-    margin: 3px 15px 3px 3px;
-    padding: 10px;
-    width: 300px;
+    margin: 2vw;
+    padding: 1vw;
+    width: 25%;
     height: auto;
     background-color: rgb(218, 219, 219);
     float: right;
@@ -159,20 +164,20 @@ aside {
 
 footer {
     padding: 1px;
-    width: 100%;
+    width:100vw;
     background-color: rgb(85, 83, 83);
     margin-top: auto;
 }
 
 .Redes{
-    margin-top: 5px;
-    margin-left: 3%;
+    margin-top: .3em;
+    margin-left: 1.5em;
     float: left;
-    width: 50%;
+    width: 46%;
 }
 .Redes h2{
-    margin: 10px;
-    padding: 5px;
+    margin: .3em;
+    padding: .3em;
     display:inline-table;
     justify-content: space-around;
     color: rgb(205, 205, 238);
@@ -181,8 +186,8 @@ footer {
 }
 
 .Redes a{
-    margin: 5px;
-    padding: 5px;
+    margin: .3em;
+    padding: .3em;
     display:inline-table;
     justify-content: space-around;
     color: rgb(244, 244, 247);
@@ -191,14 +196,15 @@ footer {
 }
 
 .Sponsor{
-    margin-top: 5px;
+    margin-top: .3em;
+    margin-right: 1em;
     float: right;
-    width: 47%;
+    width: 50%;
 }
 
 .Sponsor h2{
-    margin: 10px;
-    padding: 5px;
+    margin: .3em;
+    padding: .3em;
     display:inline-table;
     justify-content: space-around;
     color: rgb(205, 205, 238);
@@ -207,8 +213,8 @@ footer {
 }
 
 .Sponsor a{
-    margin: 5px;
-    padding: 5px;
+    margin: .3em;
+    padding: .3em;
     display:inline-table;
     justify-content: space-around;
     color: rgb(244, 244, 247);
@@ -217,9 +223,9 @@ footer {
 }
 
 #Central h2{
-    margin-top: 20px;
-    margin-left: 50px;
-    padding: 10px;
+    margin-top: 2vw;
+    margin-left: 2.5vw;
+    padding: .2vw;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em blue;
     text-align:center;
@@ -227,15 +233,15 @@ footer {
 }
 
 #Central iframe{
-    margin-left: 430px;
-    padding: 10px;
+    margin-left: 32vw;
+    padding: .5vw;
     box-sizing: content-box;
 }
 
 #Anexo h2{
-    margin-top: 20px;
-    margin-left: 50px;
-    padding: 10px;
+    margin-top: 2vw;
+    margin-left: 2.5vw;
+    padding: .2px;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em blue;
     text-align:center;
@@ -243,9 +249,9 @@ footer {
 }
 
 #Anexo iframe{
-    margin-left: 430px;
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-left: 32vw;
+    margin-bottom: 2vw;
+    padding: .5vw;
     box-sizing: content-box;
 }
 
