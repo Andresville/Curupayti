@@ -8,36 +8,43 @@
     <title>Curupayti</title>
     <link rel="stylesheet" type="text/css" href="estilos.css" />
     <link rel="shorcut icon" type="image/x-icon" href="Imagenes/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
 
-    <header>
-        <div id="nombre">
-            <h2>1924</h2>
-            <h1>CURUPAYTI</h1>
-            <h2>AYERECO CUA-A-CATU</h2>
-        </div>
-        <div id="logo">
-            <img src="Imagenes/Logo Curupayti.png" id="logo1">
-            <img src="Imagenes/Logo Curupayti.png" id="logo2">
-        </div>
-        <div>
+    <header class="padre">
+        <div class="encabezado">
+            <div class="logo1">
+                <img class="animate__animated animate__flip" src="Imagenes/Logo Curupayti.png">
+            </div>
 
+            <div class="nombre">
+                <h2>1924</h2>
+                <h1 class="animate__animated animate__zoomInDown animate__delay-1s">CURUPAYTI</h1>
+                <h2>AYERECO CUA-A-CATU</h2>
+            </div>
+
+            <div class="logo2">
+                <img class="animate__animated animate__flip" src="Imagenes/Logo Curupayti.png">
+            </div>
         </div>
-    </header>
-    <main>
-        <div id="inicio">
-            <nav>
-                <a href="Index.html" class="Inicio">Inicio</a>
-                <a href="Plantel Superio" class="Inicio">Plantel Superior</a>
-                <a href="Juveniles" class="Inicio">Juveniles</a>
-                <a href="Infantiles" class="Inicio">Infantiles</a>
-                <a href="Contecto" class="Inicio">Contacto</a>
+
+        <div>
+            <nav class="barra">
+                <a href="Index.html">Inicio</a>
+                <a href="plantel_superior.html">Plantel Superior</a>
+                <a href="juveniles.html">Juveniles</a>
+                <a href="infantiles.html">Infantiles</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
         </div>
 
-        <div id="Central">
+    </header>
+
+    <main class="mapa">
+
+        <div class="central">
             <h2>Sede Central (Acassuso 2450 - Hurlingham)</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5682054336353!2d-58.64956838519579!3d-34.58979076426746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbeb39705516d%3A0x43cf7a33173f5370!2sAcassuso%202450%2C%20Hurlingham%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1679083433315!5m2!1ses!2sar"
@@ -45,7 +52,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div id="Anexo">
+        <div class="anexo">
             <h2>Anexo (Combate de Pavon 1201 - Hurlingham)</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7981531933847!2d-58.623333285195955!3d-34.58397356395983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb96a6efd9e4f%3A0x7db74af8e8fa5416!2sCombate%20de%20Pav%C3%B3n%201201%2C%20Hurlingham%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1679084333797!5m2!1ses!2sar"
@@ -54,25 +61,27 @@
         </div>
 
     </main>
-    <footer>
-        <div class="Redes">
+
+    <footer class="pie">
+
+        <div class="redes">
             <h2>Redes Sociales</h2>
             <a href="https://www.facebook.com/Curupaytirugby/?locale=es_LA" target="_blank"><img
-                    src="Imagenes/facebook.png" width="40vw">Facebook</a>
-            <a href="https://www.instagram.com/curupaytirugby/?hl=es" target="_blank"><img src="Imagenes/instagram.png"
-                    width="40vw">Instagram</a>
-            <a href="https://twitter.com/curupaytirugby?lang=es" target="_blank"><img src="Imagenes/twitter.png"
-                    width="40vw">Twitter</a>
+                    src="Imagenes/facebook.png">Facebook</a>
+            <a href="https://www.instagram.com/curupaytirugby/?hl=es" target="_blank"><img
+                    src="Imagenes/instagram.png">Instagram</a>
+            <a href="https://twitter.com/curupaytirugby?lang=es" target="_blank"><img
+                    src="Imagenes/twitter.png">Twitter</a>
         </div>
 
-        <div class="Sponsor">
+        <div class="sponsor">
             <h2>Sponsor</h2>
             <a href="https://www.webbellis-shop.com.ar/" target="_blank"><img src="Imagenes/wel.jpg"
-                    alt="Logo webb ellis" width=50vw height=50vh>Webb Ellis</a>
+                    alt="Logo webb ellis">Webb Ellis</a>
             <a href="https://www.cerveceriaymalteriaquilmes.com/" target="_blank"><img src="Imagenes/quilmes.jpg"
-                    alt="Logo quilmes" width=50vw height=50vh>Quilmes</a>
-            <a href="http://www.watchman.com.ar/" target="_blank"><img src="Imagenes/watch.jpg" alt="Logo watchman"
-                width=50vw height=50vh>WatchMan</a>
+                    alt="Logo quilmes">Quilmes</a>
+            <a href="http://www.watchman.com.ar/" target="_blank"><img src="Imagenes/watch.jpg"
+                    alt="Logo watchman">WatchMan</a>
         </div>
     </footer>
 

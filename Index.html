@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,42 +7,47 @@
     <title>Curupayti</title>
     <link rel="stylesheet" type="text/css" href="estilos.css" />
     <link rel="shorcut icon" type="image/x-icon" href="Imagenes/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-
 <body>
-    <header>
-        <div id="nombre">
-            <h2>1924</h2>
-            <h1 class="animate__animated animate__zoomInDown animate__delay-1s" >CURUPAYTI</h1>
-            <h2>AYERECO CUA-A-CATU</h2>
-        </div>
-        <div id="logo">
-            <img class="animate__animated animate__flip" src="Imagenes/Logo Curupayti.png" id="logo1">
-            <img class="animate__animated animate__flip" src="Imagenes/Logo Curupayti.png" id="logo2">
-        </div>
-        <div>
+    <header class="padre">
+        <div class="encabezado">
+            <div class="logo1">
+                <img class="animate__animated animate__flip" src="Imagenes/Logo Curupayti.png">
+            </div>
 
+            <div class="nombre">
+                <h2>1924</h2>
+                <h1 class="animate__animated animate__zoomInDown animate__delay-1s">CURUPAYTI</h1>
+                <h2>AYERECO CUA-A-CATU</h2>
+            </div>
+
+            <div class="logo2">
+                <img class="animate__animated animate__flip" src="Imagenes/Logo Curupayti.png">
+            </div>
         </div>
-    </header>
-    <main>
-        <div id="inicio">
-            <nav>
-                <a href="Plantel Superio" class="Inicio">Plantel Superior</a>
-                <a href="Juveniles" class="Inicio">Juveniles</a>
-                <a href="Infantiles" class="Inicio">Infantiles</a>
-                <a href="Contecto" class="Inicio">Contacto</a>
-                <a href="como_llegar.html" class="Inicio">Como Llegar</a>
+
+        <div>
+            <nav class="barra">
+                <a href="plantel_superior.html">Plantel Superior</a>
+                <a href="juveniles.html">Juveniles</a>
+                <a href="infantiles.html">Infantiles</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="como_llegar.html">Como Llegar</a>
             </nav>
         </div>
 
+    </header>
+
+    <main class="descripcion">
+
         <section>
 
-            <div id="Subtitulo">
-                <h2>NUESTRA HISTORIA <img src="Imagenes/Logo Curupayti.png" alt=""></h2>
+            <div class="subtitulo">
+                <h2>NUESTRA HISTORIA</h2>
             </div>
 
-            <div id="Historia">
+            <div class="historia">
                 <p>La idea de formar un club dedicado exclusivamente a la práctica de la unión de rugby se originó en
                     1924, después de que el equipo de GEBA llegó a jugar un partido que tuvo que posponerse debido a una
                     competencia hípica que se estaba celebrando en el campo de rugby.
@@ -60,8 +64,8 @@
         </section>
 
         <aside>
-            <div id="Video">
-                <iframe width=315vw height=300vh src="https://www.youtube.com/embed/h5UqndfmZEw"
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/h5UqndfmZEw"
                     title="Leyendas del Rugby - Curupayti - Parte 1" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -69,28 +73,29 @@
         </aside>
     </main>
 
-    <footer>
-        <div class="Redes">
+    <footer class="pie">
+
+        <div class="redes">
             <h2>Redes Sociales</h2>
             <a href="https://www.facebook.com/Curupaytirugby/?locale=es_LA" target="_blank"><img
-                    src="Imagenes/facebook.png" width="40vw">Facebook</a>
+                    src="Imagenes/facebook.png">Facebook</a>
             <a href="https://www.instagram.com/curupaytirugby/?hl=es" target="_blank"><img
-                    src="Imagenes/instagram.png" width="40vw">Instagram</a>
+                    src="Imagenes/instagram.png">Instagram</a>
             <a href="https://twitter.com/curupaytirugby?lang=es" target="_blank"><img
-                    src="Imagenes/twitter.png" width="40vw">Twitter</a>
+                    src="Imagenes/twitter.png">Twitter</a>
         </div>
 
-        <div class="Sponsor">
+        <div class="sponsor">
             <h2>Sponsor</h2>
             <a href="https://www.webbellis-shop.com.ar/" target="_blank"><img src="Imagenes/wel.jpg"
-                    alt="Logo webb ellis" width=50vw height=50vh>Webb Ellis</a>
+                    alt="Logo webb ellis">Webb Ellis</a>
             <a href="https://www.cerveceriaymalteriaquilmes.com/" target="_blank"><img src="Imagenes/quilmes.jpg"
-                    alt="Logo quilmes" width=50vw height=50vh>Quilmes</a>
-            <a href="http://www.watchman.com.ar/" target="_blank"><img src="Imagenes/watch.jpg" alt="Logo watchman"
-                width=50vw height=50vh>WatchMan</a>
+                    alt="Logo quilmes">Quilmes</a>
+            <a href="http://www.watchman.com.ar/" target="_blank"><img src="Imagenes/watch.jpg"
+                    alt="Logo watchman">WatchMan</a>
         </div>
     </footer>
 
-</body>
 
+</body>
 </html>
