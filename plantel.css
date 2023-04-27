@@ -48,8 +48,8 @@
 }
 
 .grande img{
-    width: 50vw;
-    max-height: 80vh;
+    width: 45vw;
+    max-height: 90vh;
 }
 
 .grande:target{
@@ -60,7 +60,7 @@
     display: block;
     position: absolute;
     top: 4vw;
-    right: 4vw;
+    right: 20vw;
     background: rgb(245, 68, 68);
     color: rgb(211, 233, 253);
     text-decoration: none;
