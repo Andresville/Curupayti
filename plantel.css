@@ -1,5 +1,5 @@
 .plantel h2{
-    padding: 20px 0;
+    padding: 1vw 0;
     text-decoration:underline;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em rgb(252, 2, 2);
     color: white;
@@ -10,11 +10,11 @@
 
 .galeria{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18%, 1fr));
     width: 95%;
     margin: auto;
-    gap: 10px;
-    padding: 40px 0;
+    gap: 1vw;
+    padding: 2vh 0;
     overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
 .galeria img{
     width: 100%;
     vertical-align: top;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -59,14 +59,14 @@
 .cerrar{
     display: block;
     position: absolute;
-    top: 40px;
-    right: 40px;
-    background: rgb(247, 183, 183);
-    color: aliceblue;
+    top: 4vw;
+    right: 4vw;
+    background: rgb(245, 68, 68);
+    color: rgb(211, 233, 253);
     text-decoration: none;
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    height: 3vw;
     text-align: center;
-    line-height: 40px;
+    line-height: 3vw;
     border-radius: 50%;
 }
