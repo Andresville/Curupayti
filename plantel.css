@@ -1,23 +1,16 @@
 .plantel h2{
-    font-weight: 400;
-    text-align: center;
     padding: 20px 0;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:underline;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em rgb(252, 2, 2);
-    color: rgb(245, 221, 221);
-}
-
-.linea{
-    background: rgb(245, 221, 221);
-    height: 5px;
-    width: 100%;
-    display: block;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 250%;
 }
 
 .galeria{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     width: 95%;
     margin: auto;
     gap: 10px;
@@ -35,7 +28,7 @@
 .galeria img{
     width: 100%;
     vertical-align: top;
-    height: 350px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -55,8 +48,8 @@
 }
 
 .grande img{
-    width: 70vw;
-    max-height: 90vh;
+    width: 50vw;
+    max-height: 80vh;
 }
 
 .grande:target{
