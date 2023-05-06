@@ -18,7 +18,7 @@
     overflow: hidden;
 }
 
-.galeria>a {
+.galeria > a {
     display: block;
     position: relative;
     overflow: hidden;
@@ -131,4 +131,32 @@ td img{
     width: 1.2vw;
     height: auto;
     margin:0 1.5vw;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .plantel h2 {
+        font-weight: 900;
+        font-size: 150%;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
+
+    .cerrar {
+        top: 40vw;
+        right: 5vw;
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .grande img {
+        width: 90vw;
+        max-height: 190vh;
+    }
+
+    .fixture{
+        display: block;
+    }
 }
