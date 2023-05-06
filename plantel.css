@@ -159,4 +159,8 @@ td img{
     .fixture{
         display: block;
     }
+
+    td img{
+        width: 4vw;
+    }
 }
