@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="plantel.css" />
     <link rel="shorcut icon" type="image/x-icon" href="Imagenes/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="codigo.js"></script>
 </head>
 
 <body>
@@ -31,25 +32,33 @@
         </div>
 
         <div>
-            <nav class="barra">
-                <a href="Index.html">Inicio</a>
-                <a href="juveniles.html">Juveniles</a>
-                <a href="infantiles.html">Infantiles</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="como_llegar.html">Como Llegar</a>
+
+            <button id="menu">
+                <span id="menu-abrir"><img src="Imagenes/barra-de-menus.png"></span>
+                <span id="menu-cerrar">X</span>
+            </button>
+
+            <nav>
+                <ul class="barra">
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="juveniles.html">Juveniles</a></li>
+                    <li><a href="infantiles.html">Infantiles</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="como_llegar.html">Como Llegar</a></li>
+                </ul>
             </nav>
         </div>
 
     </header>
 
     <main class="plantel">
-        
+
         <h2>GALERIA DE FOTOS</h2>
-        
+
         <div class="galeria">
             <a href="#image1"><img src="Imagenes/fotos/foto1.jpg" alt=""></a>
             <a href="#image2"><img src="Imagenes/fotos/foto2.jpg" alt=""></a>
-            <a href="#image3"><img src="Imagenes/fotos/foto3.jpg" alt=""></a>    
+            <a href="#image3"><img src="Imagenes/fotos/foto3.jpg" alt=""></a>
             <a href="#image4"><img src="Imagenes/fotos/foto4.jpg" alt=""></a>
             <a href="#image5"><img src="Imagenes/fotos/foto5.jpg" alt=""></a>
             <a href="#image6"><img src="Imagenes/fotos/foto6.jpg" alt=""></a>
@@ -57,7 +66,7 @@
             <a href="#image8"><img src="Imagenes/fotos/foto8.jpg" alt=""></a>
             <a href="#image9"><img src="Imagenes/fotos/foto9.jpg" alt=""></a>
             <a href="#image10"><img src="Imagenes/fotos/foto10.jpg" alt=""></a>
-        
+
         </div>
 
         <article class="grande" id="image1">
@@ -109,6 +118,155 @@
             <img src="Imagenes/fotos/foto10.jpg" alt="">
             <a href="" class="cerrar">X</a>
         </article>
+
+        <h2>FIXTURE</h2>
+
+        <div class="fixture">
+
+            <div class="ida">
+
+                <table>
+                    <th colspan="2">Fecha 1 -- 18/03/23</th>
+                    <tr>
+                        <td>CURUPAYTI<img src="Imagenes/Logo Curupayti.png"></td>
+                        <td><img src="Imagenes/Logo Curupayti.png">LOS MATREROS</td>
+                    </tr>
+                    <th colspan="2">Fecha 2 -- 25/03/23</th>
+                    <tr>
+                        <td>SAN ALBANO</td>
+                        <td><img src="Imagenes/Logo Curupayti.png">CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 3 -- 01/04/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>SAN MARTIN</td>
+                    </tr>
+                    <th colspan="2">Fecha 4 -- 15/04/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>SAN CIRANO</td>
+                    </tr>
+                    <th colspan="2">Fecha 5 -- 22/04/23</th>
+                    <tr>
+                        <td>LOS TILOS</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 6 -- 29/04/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>LOMAS ATHLETIC</td>
+                    </tr>
+                    <th colspan="2">Fecha 7 -- 06/05/23</th>
+                    <tr>
+                        <td>OLIVOS</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 8 -- 13/05/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>CHAMPAGNAT</td>
+                    </tr>
+                    <th colspan="2">Fecha 9 -- 20/05/23</th>
+                    <tr>
+                        <td>REGATAS BELLA VISTA</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 10 -- 03/06/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>DEPORTIVA FRANCESA</td>
+                    </tr>
+                    <th colspan="2">Fecha 11 -- 10/06/23</th>
+                    <tr>
+                        <td>BANCO NACION</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 12 -- 24/06/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>MARIANO MORENO</td>
+                    </tr>
+                    <th colspan="2">Fecha 13 -- 01/07/23</th>
+                    <tr>
+                        <td>PUEYRREDON</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="vuelta">
+
+                <table>
+                    <th colspan="2">Fecha 14 -- 08/07/23</th>
+                    <tr>
+                        <td>LOS MATREROS</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 15 -- 15/07/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>SAN ALBANO</td>
+                    </tr>
+                    <th colspan="2">Fecha 16 -- 22/07/23</th>
+                    <tr>
+                        <td>SAN MARTIN</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 17 -- 29/07/23</th>
+                    <tr>
+                        <td>SAN CIRANO</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 18 -- 12/08/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>LOS TILOS</td>
+                    </tr>
+                    <th colspan="2">Fecha 19 -- 19/08/23</th>
+                    <tr>
+                        <td>LOMAS ATHLETIC</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 20 -- 26/08/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>OLIVOS</td>
+                    </tr>
+                    <th colspan="2">Fecha 21 -- 02/09/23</th>
+                    <tr>
+                        <td>CHAMPAGNAT</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 22 -- 16/09/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>REGATAS BELLA VISTA</td>
+                    </tr>
+                    <th colspan="2">Fecha 23 -- 23/09/23</th>
+                    <tr>
+                        <td>DEPORTIVA FRANCESA</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 24 -- 30/09/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>BANCO NACION</td>
+                    </tr>
+                    <th colspan="2">Fecha 25 -- 21/10/23</th>
+                    <tr>
+                        <td>MARIANO MORENO</td>
+                        <td>CURUPAYTI</td>
+                    </tr>
+                    <th colspan="2">Fecha 26 -- 28/10/23</th>
+                    <tr>
+                        <td>CURUPAYTI</td>
+                        <td>PUEYRREDON</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
 
     </main>
 

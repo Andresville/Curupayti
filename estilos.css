@@ -7,7 +7,7 @@
 body {
     margin: 0;
     width: 100%;
-    height:auto;
+    height: auto;
     display: grid;
     background-image: url(Imagenes/cancha.jpg);
     background-size: cover;
@@ -78,9 +78,10 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    list-style: none;
 }
 
-.barra>a {
+.barra li>a {
     margin-top: .5vh;
     margin-bottom: .5vh;
     color: rgb(255, 5, 5);
@@ -97,6 +98,10 @@ body {
     padding: 1vw;
 }
 
+#menu {
+    display: none;
+}
+
 .subtitulo {
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em rgb(252, 2, 2);
     color: white;
@@ -108,11 +113,11 @@ body {
 .historia {
     margin: 1vw;
     padding: 1vw;
-    color:white;
+    color: white;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em rgb(252, 2, 2);
     text-align: justify;
-    font-family:Arial, Helvetica, sans-serif;
-    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
     font-size: 130%;
     font-weight: 800;
 }
@@ -124,7 +129,7 @@ body {
     background-color: rgb(218, 219, 219);
 }
 
-.video >iframe {
+.video>iframe {
     width: 25vw;
     height: 60vh;
 }
@@ -133,12 +138,12 @@ body {
     display: inline-table;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    position:relative;
+    position: relative;
     margin: 0%;
-    padding:.5vw;
+    padding: .5vw;
     width: 100%;
     height: auto;
-    background:linear-gradient(rgb(150, 148, 148),rgb(7, 7, 7))
+    background: linear-gradient(rgb(150, 148, 148), rgb(7, 7, 7))
 }
 
 .redes {
@@ -206,8 +211,8 @@ body {
     margin-bottom: 2em;
 }
 
-.central{
-    display:grid;
+.central {
+    display: grid;
     justify-content: center;
 }
 
@@ -220,16 +225,17 @@ body {
     color: rgb(245, 221, 221);
 }
 
-.central >iframe {
+.central>iframe {
     width: 40vw;
     height: 40vh;
     padding: .5vw;
 }
 
-.anexo{
-    display:grid;
+.anexo {
+    display: grid;
     justify-content: center;
 }
+
 .anexo h2 {
     margin-top: 2vw;
     padding: .2px;
@@ -239,202 +245,10 @@ body {
     color: rgb(245, 221, 221);
 }
 
-.anexo >iframe {
+.anexo>iframe {
     width: 40vw;
     height: 40vh;
     padding: .5vw;
-}
-
-@media only screen and (max-width: 500px) {
-    body{
-        background-image:url(Imagenes/cancha2.jpg);
-    }
-
-    .logo1 img {
-        margin: 1vh;
-        width: 10vw;
-        height: 6vh;
-    }
-
-    .logo2 img {
-        margin: 1vh;
-        width: 10vw;
-        height: 6vh;
-    }
-
-    .nombre {
-        margin-top: 1.5vh;
-        height: 7vh;
-    }
-
-    .nombre>h1 {
-        font-size: 7vw;
-    }
-
-    .nombre>h2 {
-        font-size: 2vw;
-    }
-
-    .barra>a {
-        margin-top: .2vh;
-        margin-bottom: .2vh;
-        font-size: small;
-        font-weight: 300;
-    }
-
-    .descripcion {
-        grid-template-columns:1fr;
-        grid-template-rows:3fr 1fr;
-    }
-    
-    .subtitulo {
-        width: 90%;
-        font-weight:700;
-        font-size: 150%;
-    }
-    
-    .historia{
-        width: 90%;
-        height:auto;
-        font-size: 100%;
-        font-weight: 600;
-    }
-    
-    .video {
-        width: 90%;
-    }
-
-    .video >iframe {
-        width: 100%;
-        height:auto;
-    }
-
-    .redes {
-        width: 90%;
-    }
-
-    .redes h2 {
-        font-size: small;
-    }
-
-    .redes a {
-        font-size: .6rem;
-    }
-
-    .sponsor {
-        width: 90%;
-        margin-bottom: .3rem;
-    }
-
-    .sponsor h2 {
-        font-size: small;
-    }
-
-    .sponsor a {
-        font-size: .6rem;
-    }
-
-    .central >iframe {
-        width: 90%;
-        height: 30vh;
-        margin-left: 5%;
-    }
-
-    .anexo >iframe {
-        width: 90%;
-        height: 30vh;
-        margin-left: 5%;
-    }
-
-}
-
-@media only screen and (min-width: 501px) and (max-width: 768px) {
-
-    .logo1 img {
-        margin: .8vh;
-        width: 10vw;
-        height: 15vh;
-    }
-
-    .logo2 img {
-        margin: .8vh;
-        width: 10vw;
-        height: 15vh;
-    }
-
-    .nombre {
-        margin-top: 1.5vh;
-        height: 12vh;
-    }
-
-    .nombre>h1 {
-        font-size: 4vw;
-    }
-
-    .nombre>h2 {
-        font-size: 1vw;
-    }
-
-    .barra>a {
-        margin-top: .3vh;
-        margin-bottom: .3vh;
-        font-size: small;
-        font-weight: 400;
-    }
-
-    .descripcion {
-        grid-template-columns:2fr 1fr;
-    }
-    
-    .subtitulo {
-        width: 90%;
-        font-weight:700;
-        font-size: 150%;
-    }
-    
-    .historia{
-        width: 90%;
-        height:auto;
-        font-size: 100%;
-        font-weight: 600;
-    }
-    
-    .video {
-        width: 90%;
-    }
-
-    .video >iframe {
-        width: 100%;
-        height:auto;
-    }
-
-    .redes h2 {
-        font-size: small;
-    }
-
-    .redes a {
-        font-size: .6rem;
-    }
-
-    .sponsor h2 {
-        font-size: small;
-    }
-
-    .sponsor a {
-        font-size: .6rem;
-    }
-
-    .central >iframe {
-        width: 90%;
-        height: 40vh;
-        margin-left: 5%;
-    }
-
-    .anexo >iframe {
-        width: 85%;
-        height: 40vh;
-        margin-left: 7.5%;
-    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1000px) {
@@ -464,7 +278,7 @@ body {
         font-size: 1vw;
     }
 
-    .barra>a {
+    .barra li>a {
         margin-top: .3vh;
         margin-bottom: .3vh;
         font-size: small;
@@ -487,13 +301,13 @@ body {
         font-size: .6rem;
     }
 
-    .central >iframe {
+    .central>iframe {
         width: 90%;
         height: 40vh;
         margin-left: 5%;
     }
 
-    .anexo >iframe {
+    .anexo>iframe {
         width: 85%;
         height: 40vh;
         margin-left: 7.5%;
@@ -501,9 +315,262 @@ body {
 }
 
 .formulario {
-    display:block;
+    display: block;
     flex-wrap: wrap;
     width: 80%;
     margin-left: 5%;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+
+    .logo1 img {
+        margin: .8vh;
+        width: 10vw;
+        height: 15vh;
+    }
+
+    .logo2 img {
+        margin: .8vh;
+        width: 10vw;
+        height: 15vh;
+    }
+
+    .nombre {
+        margin-top: 1.5vh;
+        height: 12vh;
+    }
+
+    .nombre>h1 {
+        font-size: 4vw;
+    }
+
+    .nombre>h2 {
+        font-size: 1vw;
+    }
+
+    .barra li>a {
+        margin-top: .3vh;
+        margin-bottom: .3vh;
+        font-size: small;
+        font-weight: 400;
+    }
+
+    .descripcion {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .subtitulo {
+        width: 90%;
+        font-weight: 700;
+        font-size: 150%;
+    }
+
+    .historia {
+        width: 90%;
+        height: auto;
+        font-size: 100%;
+        font-weight: 600;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    .video>iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .redes h2 {
+        font-size: small;
+    }
+
+    .redes a {
+        font-size: .6rem;
+    }
+
+    .sponsor h2 {
+        font-size: small;
+    }
+
+    .sponsor a {
+        font-size: .6rem;
+    }
+
+    .central>iframe {
+        width: 90%;
+        height: 40vh;
+        margin-left: 5%;
+    }
+
+    .anexo>iframe {
+        width: 85%;
+        height: 40vh;
+        margin-left: 7.5%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-image: url(Imagenes/cancha2.jpg);
+    }
+
+    .padre{
+        height: 5em;
+    }
+
+    .logo1 img {
+        margin: .7vh;
+        width: 10vw;
+        height: 7vh;
+    }
+
+    .logo2 img {
+        display: none;
+        margin: 1vh;
+        width: 10vw;
+        height: 6vh;
+    }
+
+    .nombre {
+        margin-top: 1.5vh;
+        height: 7vh;
+    }
+
+    .nombre>h1 {
+        font-size: 7vw;
+    }
+
+    .nombre>h2 {
+        font-size: 2vw;
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav.visible{
+        display: block;
+    }
+
+    #menu{
+        display: flex;
+        width: 8%;
+        background: rgb(170, 165, 165);
+        font-size: 1.2em;
+        font-weight:300;
+        border-radius: .3em;
+        position: absolute;
+        right: 1.5em;
+        top: 1.3em;
+        z-index: 999;
+    }
+
+    #menu img{
+        width: 100%;
+    }
+
+    #menu-cerrar{
+        display: none;
+    }
+
+    #menu.salir #menu-abrir{
+        display: none;
+    }
+
+    #menu.salir #menu-cerrar{
+        display: block;
+    }
+
+    body.no-scroll{
+        overflow: hidden;
+    }
+
+    nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        padding-top: .5em;
+        padding-right: 1.5em;
+        opacity: .9;
+        color:beige;
+        font-size: 1.4em;
+        z-index: 45;
+    }
+
+    .barra, .barra li{
+        display: block;
+        margin-left: 1.5em;
+        text-align: left;
+        font-weight:900;
+    }
+
+    .descripcion {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+    }
+
+    .subtitulo {
+        width: 90%;
+        font-weight: 700;
+        font-size: 150%;
+    }
+
+    .historia {
+        width: 90%;
+        height: auto;
+        font-size: 100%;
+        font-weight: 600;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    .video>iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .redes {
+        width: 90%;
+    }
+
+    .redes h2 {
+        font-size: small;
+    }
+
+    .redes a {
+        font-size: .6rem;
+    }
+
+    .sponsor {
+        width: 90%;
+        margin-bottom: .3rem;
+    }
+
+    .sponsor h2 {
+        font-size: small;
+    }
+
+    .sponsor a {
+        font-size: .6rem;
+    }
+
+    .central>iframe {
+        width: 90%;
+        height: 30vh;
+        margin-left: 5%;
+    }
+
+    .anexo>iframe {
+        width: 90%;
+        height: 30vh;
+        margin-left: 5%;
+    }
+
 }
 

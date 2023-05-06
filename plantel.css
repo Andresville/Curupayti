@@ -1,6 +1,6 @@
-.plantel h2{
+.plantel h2 {
     padding: 1vw 0;
-    text-decoration:underline;
+    text-decoration: underline;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em rgb(252, 2, 2);
     color: white;
     text-align: center;
@@ -8,7 +8,7 @@
     font-size: 250%;
 }
 
-.galeria{
+.galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18%, 1fr));
     width: 95%;
@@ -18,21 +18,21 @@
     overflow: hidden;
 }
 
-.galeria > a{
+.galeria>a {
     display: block;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 6px rgba(0, 0, 0, 2);
 }
 
-.galeria img{
+.galeria img {
     width: 100%;
     vertical-align: top;
     height: 100%;
     object-fit: cover;
 }
 
-.grande{
+.grande {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,16 +47,16 @@
     transform: scale(0);
 }
 
-.grande img{
+.grande img {
     width: 45vw;
     max-height: 90vh;
 }
 
-.grande:target{
+.grande:target {
     transform: scale(1);
 }
 
-.cerrar{
+.cerrar {
     display: block;
     position: absolute;
     top: 4vw;
@@ -69,4 +69,66 @@
     text-align: center;
     line-height: 3vw;
     border-radius: 50%;
+}
+
+.fixture {
+    display: grid;
+    grid-template: auto / 40% 40%;
+    grid-template-areas: "ida vuelta";
+    gap: 5px;
+    width: 95vw;
+    margin: 2vw;
+    justify-content: space-around;
+    align-content:center;
+}
+
+.ida {
+    grid-area: ida;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+.vuelta {
+    grid-area: vuelta;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+.ida h2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+table{
+	background-color: white;
+	text-align:center;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: .5vw;
+}
+
+th{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+    font-size: large;
+}
+
+tr:nth-child(even){
+	background-color: #d3d2d2;
+}
+
+tr:hover td{
+	background-color: #7c7e7d;
+	color: white;
+}
+td img{
+    width: 1.2vw;
+    height: auto;
+    margin:0 1.5vw;
 }
