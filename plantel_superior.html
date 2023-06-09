@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="plantel.css" />
     <link rel="shorcut icon" type="image/x-icon" href="Imagenes/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="codigo.js"></script>
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -52,227 +52,26 @@
     </header>
 
     <main class="plantel">
+        <div id="app">
+            <ul class="barra2">
+                <div class="container">
+                    <button v-on:click="show('fotos')">Fotos y Video</button>
+                    <button v-on:click="show('fixture')">Fixture</button>
+                    <button v-on:click="show('staff')">Staff</button>
+                </div>
+            </ul>
 
-        <h2>GALERIA DE FOTOS</h2>
-
-        <div class="galeria">
-            <a href="#image1"><img src="Imagenes/fotos/foto1.jpg" alt=""></a>
-            <a href="#image2"><img src="Imagenes/fotos/foto2.jpg" alt=""></a>
-            <a href="#image3"><img src="Imagenes/fotos/foto3.jpg" alt=""></a>
-            <a href="#image4"><img src="Imagenes/fotos/foto4.jpg" alt=""></a>
-            <a href="#image5"><img src="Imagenes/fotos/foto5.jpg" alt=""></a>
-            <a href="#image6"><img src="Imagenes/fotos/foto6.jpg" alt=""></a>
-            <a href="#image7"><img src="Imagenes/fotos/foto7.jpg" alt=""></a>
-            <a href="#image8"><img src="Imagenes/fotos/foto8.jpg" alt=""></a>
-            <a href="#image9"><img src="Imagenes/fotos/foto9.jpg" alt=""></a>
-            <a href="#image10"><img src="Imagenes/fotos/foto10.jpg" alt=""></a>
+            <div v-show="fotos_visible">
+                <fotos></fotos>
+            </div>
+            <div v-show="fixture_visible">
+                <fixture></fixture>
+            </div>
+            <div v-show="staff_visible">
+                <staff></staff>
+            </div>
 
         </div>
-
-        <article class="grande" id="image1">
-            <img src="Imagenes/fotos/foto1.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <article class="grande" id="image2">
-            <img src="Imagenes/fotos/foto2.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <article class="grande" id="image3">
-            <img src="Imagenes/fotos/foto3.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <article class="grande" id="image4">
-            <img src="Imagenes/fotos/foto4.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <article class="grande" id="image5">
-            <img src="Imagenes/fotos/foto5.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <article class="grande" id="image6">
-            <img src="Imagenes/fotos/foto6.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <article class="grande" id="image7">
-            <img src="Imagenes/fotos/foto7.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <article class="grande" id="image8">
-            <img src="Imagenes/fotos/foto8.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <article class="grande" id="image9">
-            <img src="Imagenes/fotos/foto9.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <article class="grande" id="image10">
-            <img src="Imagenes/fotos/foto10.jpg" alt="">
-            <a href="" class="cerrar">X</a>
-        </article>
-
-        <h2>FIXTURE</h2>
-
-        <div class="fixture">
-
-            <div class="ida">
-
-                <table>
-                    <th colspan="2">Fecha 1 -- 18/03/23</th>
-                    <tr>
-                        <td><a href="https://www.youtube.com/live/4qlpMDteK9c?feature=share"
-                                target="_blank">CURUPAYTI<img src="Imagenes/Logo Curupayti.png"></a></td>
-                        <td>LOS MATREROS</td>
-
-                    </tr>
-                    <th colspan="2">Fecha 2 -- 25/03/23</th>
-                    <tr>
-                        <td>SAN ALBANO</td>
-                        <td><a href="https://www.youtube.com/live/tObA9WToBWo?feature=share"
-                            target="_blank">CURUPAYTI<img src="Imagenes/Logo Curupayti.png"></a></td>
-                    </tr>
-                    <th colspan="2">Fecha 3 -- 01/04/23</th>
-                    <tr>
-                        <td><a href="https://www.youtube.com/live/yP2nrEzgtTY?feature=share"
-                            target="_blank">CURUPAYTI<img src="Imagenes/Logo Curupayti.png"></a></td>
-                        <td>SAN MARTIN</td>
-                    </tr>
-                    <th colspan="2">Fecha 4 -- 15/04/23</th>
-                    <tr>
-                        <td><a href="https://www.youtube.com/live/Wq5YxEqVpzQ?feature=share"
-                            target="_blank">CURUPAYTI<img src="Imagenes/Logo Curupayti.png"></a></td>
-                        <td>SAN CIRANO</td>
-                    </tr>
-                    <th colspan="2">Fecha 5 -- 22/04/23</th>
-                    <tr>
-                        <td>LOS TILOS</td>
-                        <td><a href="https://www.youtube.com/live/hkHygRpJeXU?feature=share"
-                            target="_blank">CURUPAYTI<img src="Imagenes/Logo Curupayti.png"></a></td>
-                    </tr>
-                    <th colspan="2">Fecha 6 -- 29/04/23</th>
-                    <tr>
-                        <td><a href="https://www.youtube.com/live/9RwBMgEpukQ?feature=share"
-                            target="_blank">CURUPAYTI<img src="Imagenes/Logo Curupayti.png"></a></td>
-                        <td>LOMAS ATHLETIC</td>
-                    </tr>
-                    <th colspan="2">Fecha 7 -- 06/05/23</th>
-                    <tr>
-                        <td>OLIVOS</td>
-                        <td><a href="https://www.youtube.com/live/8NoTByn8W3k?feature=share"
-                            target="_blank">CURUPAYTI<img src="Imagenes/Logo Curupayti.png"></a></td>
-                    </tr>
-                    <th colspan="2">Fecha 8 -- 13/05/23</th>
-                    <tr>
-                        <td>CURUPAYTI</td>
-                        <td>CHAMPAGNAT</td>
-                    </tr>
-                    <th colspan="2">Fecha 9 -- 20/05/23</th>
-                    <tr>
-                        <td>REGATAS BELLA VISTA</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                    <th colspan="2">Fecha 10 -- 03/06/23</th>
-                    <tr>
-                        <td>CURUPAYTI</td>
-                        <td>DEPORTIVA FRANCESA</td>
-                    </tr>
-                    <th colspan="2">Fecha 11 -- 10/06/23</th>
-                    <tr>
-                        <td>BANCO NACION</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                    <th colspan="2">Fecha 12 -- 24/06/23</th>
-                    <tr>
-                        <td>CURUPAYTI</td>
-                        <td>MARIANO MORENO</td>
-                    </tr>
-                    <th colspan="2">Fecha 13 -- 01/07/23</th>
-                    <tr>
-                        <td>PUEYRREDON</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                </table>
-
-            </div>
-
-            <div class="vuelta">
-
-                <table>
-                    <th colspan="2">Fecha 14 -- 08/07/23</th>
-                    <tr>
-                        <td>LOS MATREROS</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                    <th colspan="2">Fecha 15 -- 15/07/23</th>
-                    <tr>
-                        <td>CURUPAYTI</td>
-                        <td>SAN ALBANO</td>
-                    </tr>
-                    <th colspan="2">Fecha 16 -- 22/07/23</th>
-                    <tr>
-                        <td>SAN MARTIN</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                    <th colspan="2">Fecha 17 -- 29/07/23</th>
-                    <tr>
-                        <td>SAN CIRANO</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                    <th colspan="2">Fecha 18 -- 12/08/23</th>
-                    <tr>
-                        <td>CURUPAYTI</td>
-                        <td>LOS TILOS</td>
-                    </tr>
-                    <th colspan="2">Fecha 19 -- 19/08/23</th>
-                    <tr>
-                        <td>LOMAS ATHLETIC</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                    <th colspan="2">Fecha 20 -- 26/08/23</th>
-                    <tr>
-                        <td>CURUPAYTI</td>
-                        <td>OLIVOS</td>
-                    </tr>
-                    <th colspan="2">Fecha 21 -- 02/09/23</th>
-                    <tr>
-                        <td>CHAMPAGNAT</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                    <th colspan="2">Fecha 22 -- 16/09/23</th>
-                    <tr>
-                        <td>CURUPAYTI</td>
-                        <td>REGATAS BELLA VISTA</td>
-                    </tr>
-                    <th colspan="2">Fecha 23 -- 23/09/23</th>
-                    <tr>
-                        <td>DEPORTIVA FRANCESA</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                    <th colspan="2">Fecha 24 -- 30/09/23</th>
-                    <tr>
-                        <td>CURUPAYTI</td>
-                        <td>BANCO NACION</td>
-                    </tr>
-                    <th colspan="2">Fecha 25 -- 21/10/23</th>
-                    <tr>
-                        <td>MARIANO MORENO</td>
-                        <td>CURUPAYTI</td>
-                    </tr>
-                    <th colspan="2">Fecha 26 -- 28/10/23</th>
-                    <tr>
-                        <td>CURUPAYTI</td>
-                        <td>PUEYRREDON</td>
-                    </tr>
-                </table>
-            </div>
 
         </div>
 
@@ -302,6 +101,19 @@
     </footer>
 
 
+
+    <!--CDN de Vue, version de desarrollo -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <!-- Script con los componentes -->
+    <script src="componentes.js"></script>
+
+    <!-- Nuestro script con Vue-->
+    <script src="scriptvue.js"></script>
+
+    <script src="codigo.js"></script>
+
+    </script>
 </body>
 
 </html>
