@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="carrusel.css">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="shorcut icon" type="image/x-icon" href="Imagenes/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Fotos</title>
+</head>
+
+<body>
+  <header class="padre">
+    <div class="encabezado">
+      <div class="logo1">
+        <img class="animate__animated animate__flip" src="/Imagenes/Logo Curupayti.png">
+      </div>
+
+      <div class="nombre">
+        <h2>1924</h2>
+        <h1 class="animate__animated animate__zoomInDown animate__delay-1s">CURUPAYTI</h1>
+        <h2>AYERECO CUA-A-CATU</h2>
+      </div>
+
+      <div class="logo2">
+        <img class="animate__animated animate__flip" src="/Imagenes/Logo Curupayti.png">
+      </div>
+    </div>
+
+    <div>
+
+      <button id="menu">
+        <span id="menu-abrir"><img src="Imagenes/menu-hamburguesa.png"></span>
+        <span id="menu-cerrar">X</span>
+      </button>
+
+      <nav>
+        <ul class="barra">
+          <li><a href="/Index.html">Inicio</a></li>
+          <li><a href="/plantel_superior.html">Plantel Superior</a></li>
+          <li><a href="/juveniles.html">Juveniles</a></li>
+          <li><a href="/infantiles.html">Infantiles</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+          <li><a href="/como_llegar.html">Como Llegar</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <div class="main">
+    <div class="slides">
+      <img src="../Imagenes/fotos/foto1.jpg" alt="">
+      <img src="../Imagenes/fotos/foto2.jpg" alt="">
+      <img src="../Imagenes/fotos/foto3.jpg" alt="">
+      <img src="../Imagenes/fotos/foto4.jpg" alt="">
+      <img src="../Imagenes/fotos/foto5.jpg" alt="">
+    </div>
+  </div>
+
+  <footer class="pie">
+
+    <div class="redes">
+      <h2>Redes Sociales</h2>
+      <a href="https://www.facebook.com/Curupaytirugby/?locale=es_LA" target="_blank"><img
+          src="/Imagenes/facebook.png">Facebook</a>
+      <a href="https://www.instagram.com/curupaytirugby/?hl=es" target="_blank"><img
+          src="/Imagenes/instagram.png">Instagram</a>
+      <a href="https://twitter.com/curupaytirugby?lang=es" target="_blank"><img src="/Imagenes/twitter.png">Twitter</a>
+    </div>
+
+    <div class="sponsor">
+      <h2>Sponsor</h2>
+      <a href="https://www.webbellis-shop.com.ar/" target="_blank"><img src="/Imagenes/wel.jpg"
+          alt="Logo webb ellis">Webb Ellis</a>
+      <a href="https://www.cerveceriaymalteriaquilmes.com/" target="_blank"><img src="/Imagenes/quilmes.jpg"
+          alt="Logo quilmes">Quilmes</a>
+      <a href="http://www.watchman.com.ar/" target="_blank"><img src="/Imagenes/watch.jpg"
+          alt="Logo watchman">WatchMan</a>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="./JS Carrusel/jquery.slides.js"></script>
+  <script>
+    $(function () {
+      $(".slides").slidesjs({
+        play: {
+          active: true,
+          // [boolean] Generate the play and stop buttons.
+          // You cannot use your own buttons. Sorry.
+          effect: "slide",
+          // [string] Can be either "slide" or "fade".
+          interval: 2000,
+          // [number] Time spent on each slide in milliseconds.
+          auto: true,
+          // [boolean] Start playing the slideshow on load.
+          swap: true,
+          // [boolean] show/hide stop and play buttons
+          pauseOnHover: false,
+          // [boolean] pause a playing slideshow on hover
+          restartDelay: 2500
+          // [number] restart delay on inactive slideshow
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

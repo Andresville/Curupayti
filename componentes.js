@@ -1,25 +1,42 @@
 const componente1 = {
-    // Datos del Home
-    template: `
-    <h2>GALERIA DE FOTOS</h2>
 
-        <div class="galeria">
-            <a href="#image1"><img src="Imagenes/fotos/foto1.jpg" alt=""></a>
-            <a href="#image2"><img src="Imagenes/fotos/foto2.jpg" alt=""></a>
-            <a href="#image3"><img src="Imagenes/fotos/foto3.jpg" alt=""></a>
-            <a href="#image4"><img src="Imagenes/fotos/foto4.jpg" alt=""></a>
-            <a href="#image5"><img src="Imagenes/fotos/foto5.jpg" alt=""></a>
-            <a href="#image6"><img src="Imagenes/fotos/foto6.jpg" alt=""></a>
-            <a href="#image7"><img src="Imagenes/fotos/foto7.jpg" alt=""></a>
-            <a href="#image8"><img src="Imagenes/fotos/foto8.jpg" alt=""></a>
-            <a href="#image9"><img src="Imagenes/fotos/foto9.jpg" alt=""></a>
-            <a href="#image10"><img src="Imagenes/fotos/foto10.jpg" alt=""></a>
+    template:
+        ` 
+    <h2>CURUPAYTI vs:</h2>
+    
+        <div class="escudos">
+            <span><img src="Imagenes/Los_Matreros.png" alt=""><a href="./carrusel/carrusel.html">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/4qlpMDteK9c?feature=share"
+            target="_blank">Video</a></span>
+            <span><img src="Imagenes/San_albano.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/tObA9WToBWo?feature=share"
+            target="_blank">Video</a></span>
+            <span><img src="Imagenes/San-Martin.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/yP2nrEzgtTY?feature=share"
+            target="_blank">Video</a></span>
+            <span><img src="Imagenes/San-Cirano.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/Wq5YxEqVpzQ?feature=share"
+            target="_blank">Video</a></span>
+            <span><img src="Imagenes/Los-Tilos.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/hkHygRpJeXU?feature=share"
+            target="_blank">Video</a></span>
+            <span><img src="Imagenes/Lomas.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/9RwBMgEpukQ?feature=share"
+            target="_blank">Video</a></span>
+            <span><img src="Imagenes/Olivos.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/8NoTByn8W3k?feature=share"
+            target="_blank">Video</a></span>
+            <span><img src="Imagenes/Champagnat.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/ech0kxbL_JM?feature=share"
+            target="_blank">Video</a></span>
+            <span><img src="Imagenes/Regatas.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/Y7o2zyq5ZtY?feature=share"
+            target="blank">Video</a></span>
+            <span><img src="Imagenes/Deportiva-Francesa.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a href="https://www.youtube.com/live/ghw2avbtvFc?feature=share"
+            target="blank">Video</a></span>
+            <span><img src="Imagenes/Banco-Nacion.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a herf="">Video</a></span>
+            <span><img src="Imagenes/Mariano-Moreno.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a herf="">Video</a></span>
+            <span><img src="Imagenes/Pueyrredon.png" alt=""><a href="">Ida</a><a href="">Vuelta</a><a herf="">Video</a></span>
 
         </div>
+    
     `
 }
+
+
 const componente2 = {
-    // Datos de la receta
+
     template: `
     <h2>FIXTURE</h2>
 
@@ -30,63 +47,53 @@ const componente2 = {
                 <table>
                     <th colspan="2">Fecha 1 -- 18/03/23</th>
                     <tr>
-                        <td><a href="https://www.youtube.com/live/4qlpMDteK9c?feature=share"
-                                target="_blank">Curupayti<img src="Imagenes/Logo Curupayti.png"></a>15</td>
+                        <td>Curupayti<img src="Imagenes/Logo Curupayti.png">15</td>
                         <td>31<img src="Imagenes/Los_matreros.png">Los Matreros</td>
 
                     </tr>
                     <th colspan="2">Fecha 2 -- 25/03/23</th>
                     <tr>
                         <td>San Albano<img src="Imagenes/San_albano.png">31</td>
-                        <td>36<a href="https://www.youtube.com/live/tObA9WToBWo?feature=share"
-                                target="_blank"><img src="Imagenes/Logo Curupayti.png">Curupayti</a></td>
+                        <td>36<img src="Imagenes/Logo Curupayti.png">Curupayti</td>
                     </tr>
                     <th colspan="2">Fecha 3 -- 01/04/23</th>
                     <tr>
-                        <td><a href="https://www.youtube.com/live/yP2nrEzgtTY?feature=share"
-                                target="_blank">Curupayti<img src="Imagenes/Logo Curupayti.png"></a>23</td>
+                        <td>Curupayti<img src="Imagenes/Logo Curupayti.png">23</td>
                         <td>20<img src="Imagenes/San-Martin.png">San Martin</td>
                     </tr>
                     <th colspan="2">Fecha 4 -- 15/04/23</th>
                     <tr>
-                        <td><a href="https://www.youtube.com/live/Wq5YxEqVpzQ?feature=share"
-                                target="_blank">Curupayti<img src="Imagenes/Logo Curupayti.png"></a>20</td>
+                        <td>Curupayti<img src="Imagenes/Logo Curupayti.png">20</td>
                         <td>20<img src="Imagenes/San-Cirano.png">San Cirano</td>
                     </tr>
                     <th colspan="2">Fecha 5 -- 22/04/23</th>
                     <tr>
                         <td>Los Tilos<img src="Imagenes/Los-Tilos.png">25</td>
-                        <td>20<a href="https://www.youtube.com/live/hkHygRpJeXU?feature=share"
-                                target="_blank"><img src="Imagenes/Logo Curupayti.png">Curupayti</a></td>
+                        <td>20<img src="Imagenes/Logo Curupayti.png">Curupayti</td>
                     </tr>
                     <th colspan="2">Fecha 6 -- 29/04/23</th>
                     <tr>
-                        <td><a href="https://www.youtube.com/live/9RwBMgEpukQ?feature=share"
-                                target="_blank">Curupayti<img src="Imagenes/Logo Curupayti.png"></a>43</td>
+                        <td>Curupayti<img src="Imagenes/Logo Curupayti.png">43</td>
                         <td>16<img src="Imagenes/Lomas.png">Lomas Athletic</td>
                     </tr>
                     <th colspan="2">Fecha 7 -- 06/05/23</th>
                     <tr>
                         <td>Olivos<img src="Imagenes/Olivos.png">20</td>
-                        <td>28<a href="https://www.youtube.com/live/8NoTByn8W3k?feature=share"
-                                target="_blank"><img src="Imagenes/Logo Curupayti.png">Curupayti</a></td>
+                        <td>28<img src="Imagenes/Logo Curupayti.png">Curupayti</td>
                     </tr>
                     <th colspan="2">Fecha 8 -- 13/05/23</th>
                     <tr>
-                        <td><a href="https://www.youtube.com/live/ech0kxbL_JM?feature=share"
-                                target="_blank">Curupayti<img src="Imagenes/Logo Curupayti.png"></a>33</td>
+                        <td>Curupayti<img src="Imagenes/Logo Curupayti.png">33</td>
                         <td>31<img src="Imagenes/Champagnat.png">Champagnat</td>
                     </tr>
                     <th colspan="2">Fecha 9 -- 20/05/23</th>
                     <tr>
                         <td>Regatas B.V.<img src="Imagenes/Regatas.png">29</td>
-                        <td>13<a href="https://www.youtube.com/live/Y7o2zyq5ZtY?feature=share"
-                                target="blank"><img src="Imagenes/Logo Curupayti.png">Curupayti</a></td>
+                        <td>13<img src="Imagenes/Logo Curupayti.png">Curupayti</td>
                     </tr>
                     <th colspan="2">Fecha 10 -- 03/06/23</th>
                     <tr>
-                        <td><a href="https://www.youtube.com/live/ghw2avbtvFc?feature=share"
-                                target="blank">Curupayti<img src="Imagenes/Logo Curupayti.png"></a>35</td>
+                        <td>Curupayti<img src="Imagenes/Logo Curupayti.png">35</td>
                         <td>37<img src="Imagenes/Deportiva-Francesa.png">Deportiva Francesa</td>
                     </tr>
                     <th colspan="2">Fecha 11 -- 10/06/23</th>
