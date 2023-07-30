@@ -1,0 +1,260 @@
+/*Contacto*/
+
+section.formcontato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 4rem;
+    background-color: rgb(90, 85, 74);
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+    line-height: 2rem;
+}
+
+.formcontato__contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.formcontato__title {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.formcontato__subtext {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.formcontato__input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vw;
+    height: 7vh;
+    border: none;
+    background-color: #fff;
+	box-sizing: border-box;
+	border-bottom: 1px solid #2A7AE4;
+    font-size: 1rem;
+	font-family: 'Raleway';
+}
+
+.formcontato__textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vw;
+    height: 25vh;
+    border: none;
+    background-color: #fff;
+	box-sizing: border-box;
+	border-bottom: 1px solid #2A7AE4;
+    font-size: 1rem;
+	font-family: 'Raleway';
+}
+
+.input {
+	background-color: #fff;
+	border: none;
+	box-sizing: border-box;
+	border-bottom: 1px solid #2A7AE4;
+	padding: 1.375rem 0.5rem 0.5rem;
+	height: 3.25rem;
+	width: 100%;
+}
+
+.input,
+.textarea{
+	font-size: 1rem;
+	font-family: 'Raleway' ;
+}
+  
+.input::placeholder {
+	visibility: hidden;
+	color: #00000000;
+}
+  
+.input:focus {
+    outline: none;
+}
+  
+.input-label {
+	position: absolute;
+	top: 1.375rem;
+	left: 0.5rem;
+	transition: all 0.25s;
+}
+  
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+	font-size: 0.875rem;
+	top: 0.25rem;
+	transition: all 0.05s;
+}
+  
+.input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+  
+.input-container--invalid .input {
+	border: 1px solid red;
+	border-radius: 7px;
+}
+
+.input-container--invalid .input-label {
+	color: red;
+}
+
+.input-message-error {
+	display: none;
+}
+
+.input-container--invalid .input-message-error {
+	color: red;
+	display: block;
+	margin-top: 0.5rem;
+	padding-left: 0.5rem;
+}
+
+.textarea {
+	background-color: #fff;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #2A7AE4;
+	padding: 0.5rem;
+	border-radius: 7px;
+	width: 100%;
+	min-height: 3rem;
+	resize: none;
+}
+
+.formulario__textarea-container {
+	position: relative;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.textarea::placeholder {
+	visibility: hidden;
+}
+
+.textarea:focus {
+	outline: none;
+}
+
+.input-label {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	transition: all 0.05s;
+}
+
+.textarea:not(:placeholder-shown) + .input-label,
+.textarea:focus + .input-label {
+	font-size: 0.875rem;
+	top: -1.25rem;
+	transition: all 0.05s;
+}
+
+.textarea-container--invalid {
+	margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .textarea {
+	border: 1px solid red;
+}
+
+.textarea-container--invalid .input-label {
+	color: red;
+}
+
+.textarea-mensagem-erro {
+	display: none;
+}
+
+.textarea-container--invalid .textarea-mensagem-erro {
+	display: block;
+	color: red;
+	margin-top: 0.5rem;
+	padding-left: 0.5rem;
+}
+
+.formcontato__botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 10vw;
+    height: 8.5vh;
+    background: #2A7AE4;
+    border: none;
+    color: #fff;
+}
+
+/*Mobile*/
+@media  screen and (max-width:450px) {
+    section.formcontato {
+        width: 420px;
+        justify-content: center;
+    }
+    .formcontato__title {
+        font-size: 1.35rem;
+        margin-left: 1rem;
+    }
+    .formcontato__subtext {
+        margin: 0.5rem;
+    }
+    .formcontato__form {
+        gap: .5rem;
+    }
+    .formcontato__input {
+        width: 70vw;  
+    }
+    .formcontato__textarea {
+        width: 70vw;
+        height: 25vh;
+    }
+    .formcontato__botao {
+        width: 35vw;
+        height: 8.5vh;
+        margin-bottom: 1rem;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 450px) and (max-width: 768px){
+    section.formcontato {
+        justify-content: center;
+    }
+
+    .formcontato__input {
+        width: 70vw;  
+    }
+    .formcontato__textarea {
+        width: 70vw;
+        height: 25vh;
+    }
+    .formcontato__botao {
+        width: 20vw;
+        height: 15vh;
+        margin-bottom: 1rem;
+    }
+
+}
